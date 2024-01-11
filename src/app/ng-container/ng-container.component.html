@@ -1,0 +1,11 @@
+<p>Learn toggle ng-container</p>
+
+<ng-container *ngIf="toggle; else toggleModeOff">
+<p style="color: green;">This is toggle mode on....</p>
+</ng-container>
+
+<ng-template #toggleModeOff>
+<p style="color: red;">This is toggle mode off....</p>
+</ng-template>
+
+<button (click)="onToggle()">Toggle</button>
